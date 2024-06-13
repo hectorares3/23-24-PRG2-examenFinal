@@ -4,4 +4,6 @@ abstract class Pan {
     public String getTipo() {
         return tipo;
     }
+
+    public abstract String getRepresentacion();
 }
