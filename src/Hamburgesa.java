@@ -19,23 +19,32 @@ class Hamburguesa{
             indiceExtra++;
         }
     }
-    @Override
-public String toString() {
-    String descripcion = "Hamburguesa con pan superior de " + panSuperior.getTipo() + ", " +
-                         "pan inferior de " + panInferior.getTipo() + ", " +
-                         "carne de res " + carne.getCoccion() + ", " +
-                         "y los siguientes extras: ";
-    for (Extra extra : extras) {
-        if (extra instanceof Ketchup) {
-            descripcion += extra.getTipo() + " (cantidad: " + ((Ketchup) extra).getCantidad() + "), ";
-        } else if (extra instanceof Mayonesa) {
-            descripcion += extra.getTipo() + " (cantidad: " + ((Mayonesa) extra).getCantidad() + "), ";
-        } else {
-            descripcion += extra.getTipo() + ", ";
+@Override
+    public String toString() {
+        String descripcion = "Sale una " + panSuperior.getTipo() + ", " + carne.getClass().getSimpleName() +
+                             " (" + carne.getCoccion() + "), ";
+    
+        for (Extra extra : extras) {
+            if (extra instanceof Ketchup) {
+                descripcion += ((Ketchup) extra).getCantidad() + " de " + extra.getTipo() + ", ";
+            } else if (extra instanceof Mayonesa) {
+                descripcion += ((Mayonesa) extra).getCantidad() + " de " + extra.getTipo() + ", ";
+            } else {
+                descripcion += extra.getTipo() + ", ";
+            }
         }
+       
+        descripcion += "\n\n";
+    
+        descripcion += panSuperior.getRepresentacion() + "\n";
+        descripcion += carne.getRepresentacion() + "\n";
+        for (Extra extra : extras) {
+            descripcion += extra.getRepresentacion() + "\n";
+        }
+        descripcion += panInferior.getRepresentacion() + "\n";
+    
+        return descripcion;
     }
-    return descripcion;
-}
 
 
 
@@ -45,4 +54,3 @@ public String toString() {
 }
 
 
-}

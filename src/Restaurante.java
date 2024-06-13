@@ -1,6 +1,4 @@
-class Restaurante {
-
-    private void atender() {
+ private void atender() {
         Cocinero bobEsponja = new Cocinero();
         Camarero calamardo = new Camarero();
         
@@ -13,4 +11,3 @@ class Restaurante {
         Restaurante crustaceoCrujiente = new Restaurante();
         crustaceoCrujiente.atender();
     }
-}
