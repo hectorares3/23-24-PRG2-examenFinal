@@ -46,7 +46,7 @@ Diseñe y programe un sistema que modele todo este proceso, considerando las res
 
 ### Legacy
 
-¡No parte de cero! (cosa que puede ser buena o no...) El dueño del restaurante nos dice que se ha conseguido acceso al siguiente fragmento de código, al cual se agregará el código que presente.
+¡No parte de cero! (cosa que puede ser buena, o no...) El dueño del restaurante nos dice que se ha conseguido acceso al siguiente fragmento de código, al cual se agregará el código que presente.
 
 - Clase [Restaurante](/src/Restaurante.java)
 - Clase [Empleado](/src/Empleado.java)
@@ -55,7 +55,7 @@ Diseñe y programe un sistema que modele todo este proceso, considerando las res
 ## Se evaluará
 
 - **Código limpio.**
-- **Proceso de creación que garantice la trazabilidad.**
+- **Proceso de creación ***contínuo*** que garantice la trazabilidad.**
 - **Implementación clara y legible**
 - Diseño.
   - Jerarquía de clases.
