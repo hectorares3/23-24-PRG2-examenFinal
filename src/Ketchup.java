@@ -9,4 +9,9 @@ class Ketchup extends Extra {
     public String getCantidad() {
         return cantidad;
     }
+
+    @Override
+    public String getRepresentacion() {
+        return "ooOooOooOooO";
+    }
 }
