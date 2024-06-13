@@ -1,5 +1,5 @@
-class Cheddar extends Extra {
-    public Cheddar() {
+class Chedar extends Extra {
+    public Chedar() {
         this.tipo = "Cheddar";
     }
 

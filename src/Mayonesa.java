@@ -12,6 +12,6 @@ class Mayonesa extends Extra {
 
     @Override
     public String getRepresentacion() {
-        return "=~~=~~=~~=";
+        return "~=~~=~~=~~=~";
     }
 }
